@@ -1,0 +1,21 @@
+{
+  "name": "unblock_click",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run copy",
+    "watch": "tsc -w",
+    "copy": "copyfiles -u 1 src/manifest.json src/styles.css src/assets/**/* src/popup/popup.html src/styles/**/* dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.269",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
