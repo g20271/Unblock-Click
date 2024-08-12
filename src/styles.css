@@ -3,6 +3,6 @@
 .custom-img-style {
     user-select: auto;
     position: relative;
-    z-index: 2147483647;
+    /* z-index: 2147483647; */
     pointer-events: auto;
 }
