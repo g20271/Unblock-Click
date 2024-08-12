@@ -10,6 +10,13 @@
         "css": ["styles.css"],
         "js": ["content.js"]
       }
-    ]
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{3c08317a-95fa-df06-eb3e-90def520c4f3}",
+        "strict_min_version": "120.0"
+      }
+    }
+    
   }
   

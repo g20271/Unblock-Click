@@ -6,7 +6,10 @@
   "scripts": {
     "build": "tsc && npm run copy",
     "watch": "tsc -w",
-    "copy": "copyfiles -u 1 src/manifest.json src/styles.css src/assets/**/* src/popup/popup.html src/styles/**/* dist/"
+    "copy": "copyfiles -u 1 src/manifest.json src/styles.css src/assets/**/* src/popup/popup.html src/styles/**/* dist/",
+    "build:firefox": "npm run build && web-ext build -s dist --overwrite-dest",
+    "start:firefox": "npm run build && web-ext run -s dist",
+    "lint:firefox": "npm run build && web-ext lint -s dist"
   },
   "keywords": [],
   "author": "",
